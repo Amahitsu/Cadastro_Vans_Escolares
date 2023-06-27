@@ -1,0 +1,38 @@
+program AppVansEscolar;
+
+uses
+  System.SysUtils;
+
+ type
+ TAluno = record
+    nome:string[100];
+    cpf: string[11];
+    endereco: string[2];
+ end;
+ listaAlunos = array [1..3] of TAlunos;
+
+function menu:byte;
+var
+  opc:byte;
+begin
+    writeln ('1 - Cadastrar Veículo');
+    writeln ('2 - A quantidade de veículos existentes na cidade ');
+    writeln ('3 - A quantidade de veículos com mais de dez anos de circulação ');
+    writeln ('4 - A quantidade de veículos com mais de vinte anos de circulação ');
+    writeln ('5 - O percentual de veiculos com menos de cinco anos de circulação em relação ao total de veiculos');
+    writeln ('6 - O percentual de veiculos com motor 1.0 cujo ano seja superior a 2000 e a cor seja branca');
+    writeln ('0 - Sair');
+
+    readln(opc);
+    result := opc;
+
+end;
+
+procedure controler;
+begin
+
+end;
+// controle principal.
+begin
+
+end.

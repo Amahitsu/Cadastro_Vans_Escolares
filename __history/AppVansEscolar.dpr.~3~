@@ -19,7 +19,7 @@ begin
     writeln ('2 - Cadastrar escola: ');
     writeln ('3 - Cadastrar Veículo: ');
     writeln ('4 - Cadastrar motorista: ');
-    writeln ('5 - Mostrar quantidade de alunos  vans cadastrados no sistema.');
+    writeln ('5 - Mostrar quantidade de alunos, vans cadastrados no sistema.');
     writeln ('6 - Mostrar escolas cadastradas e seus horários');
     writeln ('0 - Sair');
 
@@ -28,23 +28,7 @@ begin
 end;
 
 procedure controler;
-
-var
-  opc:byte;
-  cont: integer;
-
 begin
-   while (opc <> 0) do
-   begin
-     case opc of
-          1: cadastrarAlunos;
-          2: cadastrarEscola;
-          3: cadastrarVeículo;
-          4: cadastrarMotorista;
-          5:
-
-     end;
-   end;
     menu;
 
 
